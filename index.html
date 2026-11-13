@@ -151,9 +151,9 @@
 
         <!-- CTA Buttons: Download CV & LinkedIn (+ GitHub) -->
         <div class="flex flex-wrap items-center gap-4 pt-8">
-          <!-- Download CV Button -->
-          <a href="#contact" id="btn-download-cv" class="inline-flex items-center justify-center px-8 py-3.5 rounded-full text-sm font-bold bg-[#234078] text-white hover:bg-[#1A3160] shadow-md transition-all duration-200 hover:scale-105">
-            Download CV
+          <!-- CV Button -->
+          <a href="https://drive.google.com/file/d/1zl4yn1Maym4amOUJKfObAN-ngczPzpZu/view" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-3.5 rounded-full text-sm font-bold bg-[#234078] text-white hover:bg-[#1A3160] shadow-md transition-all duration-200 hover:scale-105">
+            Curriculum Vitae
           </a>
 
           <!-- LinkedIn Button -->
@@ -718,10 +718,10 @@
           <!-- 3 Documentation Photos Grid -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
             <div class="overflow-hidden rounded-xl border border-cobalt-900/10 aspect-video bg-white shadow-sm group">
-              <img src="assets/org/internal1.jpg" alt="Dokumentasi Internal 1" class="w-full h-full object-cover ">
+              <img src="assets/org/internal1.JPG" alt="Dokumentasi Internal 1" class="w-full h-full object-cover ">
             </div>
             <div class="overflow-hidden rounded-xl border border-cobalt-900/10 aspect-video bg-white shadow-sm group">
-              <img src="assets/org/internal2.jpg" alt="Dokumentasi Internal 2" class="w-full h-full object-cover">
+              <img src="assets/org/internal2.JPG" alt="Dokumentasi Internal 2" class="w-full h-full object-cover">
             </div>
           </div>
         </div>
@@ -1116,22 +1116,6 @@
       }, 2500);
     }).catch(() => {
       showToast('Gagal menyalin email otomatis.');
-    });
-  }
-
-  // 6. CV Download
-  function triggerCVDownload() {
-    showToast('Menyiapkan Curriculum Vitae Nadine Jullietta (PDF)...');
-    setTimeout(() => {
-      window.location.href = 'mailto:juliettanadine@gmail.com?subject=Permintaan%20Curriculum%20Vitae%20-%20Nadine%20Jullietta';
-    }, 1200);
-  }
-
-  const cvBtn = document.getElementById('btn-download-cv');
-  if (cvBtn) {
-    cvBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      triggerCVDownload();
     });
   }
 </script>
